@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color:#fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.page{
+  background-color: rgba(234, 231, 225, 0.5);
+  display:flex;
+  position: relative;
+  flex-wrap: wrap;
+  width:90vw;
+  margin:5vw auto;
+}
+
+.gauche{
+  width:60%;
+}
+
+.droite{
+  width:40%;
+  padding: 5vw ;
+}
+
+nav .closed ,.menu{
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px; 
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+}
+
+nav{
+  
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3em;
+  font-weight: bolder;
+
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  background-color: #333
+}
+.menuOuvert nav {
+  visibility: visible;
+  opacity:2;
+  /* transition-duration: 10s; */
+  transition: 5s;
+  
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .gauche{
+    width:100%;
+  }
+  .droite{
+    width:100%;
+    padding: 5vw ;
+  }
+}
+
+.gauche img {
+  width:100%;
+  height:auto;
+}
+
+.droite p{
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.artiste {
+  font-size: 0.7em;
+  padding-bottom: 4em;
+}
+
+.droite h1 {
+  font-family: 'Lora', serif;
+  font-size: 4em;
+  padding-bottom: 1em;
+  font-style: italic;
+}
